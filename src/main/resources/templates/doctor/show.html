@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <title th:text="${doctor.name + ' ' + doctor.lastName}">Doctor name</title>
+</head>
+<body style="background-color: gray">
+<div class="container-fluid" style="margin-top: 250px;">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3">
+            <div class="panel-group">
+
+                <div class="panel panel-primary" style="background:">
+                    <div class="panel-heading" style="background: black">
+                        <h1 class="panel-title" th:text="${doctor.name + ' ' + doctor.lastName}">Doctor name</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h5><b>Name:</b></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 th:text="${doctor.name}">........................</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <h5><b>Last name:</b></h5>
+                            </div>
+                            <div class="col-md-2">
+                                <h5 th:text="${doctor.lastName}">........................</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h5><b>Specialization:</b></h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 th:text="${doctor.spec}">........................</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h5><b>Phone:</b></h5>
+                                </div>
+                                <div class="col-md-2">
+                                    <h5 th:text="${doctor.phoned}">........................</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md- col-md-offset-11">
+                <input onclick='javascript:window.history.back()' value='Back' type='button' class="btn btn-default"style="background-color: #ff4444"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
